@@ -1,0 +1,19 @@
+{
+    "functionTimeout": "00:10:00",
+    "http": {
+        "routePrefix": "api",
+        "maxOutstandingRequests": 20,
+        "maxConcurrentRequests": 10,
+        "dynamicThrottlesEnabled": false
+    },
+    "logger": {
+        "categoryFilter": {
+            "defaultLevel": "Information",
+            "categoryLevels": {
+                "Host": "Error",
+                "Function": "Error",
+                "Host.Aggregator": "Information"
+            }
+        }
+    }
+}

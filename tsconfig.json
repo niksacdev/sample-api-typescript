@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "sourceMap": true,
+        "outDir": "vehicle-api-output-debug"
+    },
+    "exclude": [
+        "node_modules"
+    ]
+}
