@@ -2,12 +2,13 @@
   "name": "sample-vehicle-api-azfunc",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "dependencies": {},
+  "main": "./vehicle-api-output-debug/index.js",
+  "dependencies": {
+    "documentdb-typescript": "^1.0.7"
+  },
   "devDependencies": {
     "@types/documentdb": "^1.10.4",
     "@types/node": "^9.4.6",
-    "documentdb-typescript": "^1.0.7",
     "tslint": "^5.9.1",
     "typescript": "^2.7.2"
   },
