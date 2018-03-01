@@ -8,13 +8,13 @@ export async function run(context: any, req: any) {
     // get cosmos db details and collection
     const url = process.env.COSMOS_DB_HOSTURL;
     const key = process.env.COSMOS_DB_KEY;
-    const coll = await new Collection("vehicle", "vehiclelog", url, key).openOrCreateDatabaseAsync();
+    const coll = await new Collection(process.env.COSMOS_DB_COLLECTION_NAME, process.env.COSMOS_DB_NAME, url, key).openOrCreateDatabaseAsync();
 
     if (id !== 0) {
         // invoke type to get id information from cosmos
         const allDocs = await coll.queryDocuments(
             {
-                query: "select * from vehicle",
+                query: "select * from vehicle v where v.id = @id",
                 parameters: [{name: "@id", value: id }]
             },
             {enableCrossPartitionQuery: true, maxItemCount: 10}).toArray();
