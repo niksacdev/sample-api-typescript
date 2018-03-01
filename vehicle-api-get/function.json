@@ -1,11 +1,16 @@
 {
   "disabled": false,
+  "scriptFile": "../vehicle-api-output-debug/index.js",
   "bindings": [
     {
       "authLevel": "anonymous",
       "type": "httpTrigger",
       "direction": "in",
-      "name": "req"
+      "name": "req",
+      "route":"{id}",
+      "methods": [
+        "get"
+      ]
     },
     {
       "type": "http",

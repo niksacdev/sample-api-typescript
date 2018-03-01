@@ -1,5 +1,5 @@
 export function run(context: any, req: any): void {
-    context.log("TypeScript HTTP trigger function processed a request.");
+    context.log("Entering GET operation for the Vehicle API.");
 
     if (req.query.name || (req.body && req.body.name)) {
         context.res = {
