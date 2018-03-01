@@ -22,6 +22,5 @@ project.lock.json
 .secrets
 appsettings.json
 local.settings.json
-/vscode
 /vehicle-api-output-debug
 /node_modules
