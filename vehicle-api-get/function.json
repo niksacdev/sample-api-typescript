@@ -1,6 +1,6 @@
 {
   "disabled": false,
-  "scriptFile": "../vehicle-api-output-debug/index.js",
+  "scriptFile": "../vehicle-api-output-debug/vehicle-api-get/index.js",
   "bindings": [
     {
       "authLevel": "anonymous",

@@ -1,0 +1,25 @@
+{
+  "disabled": false,
+  "scriptFile": "../vehicle-api-output-debug/vehicle-api-post/index.js",
+  "bindings": [
+    {
+      "authLevel": "anonymous",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req",
+      "route": "data",
+      "methods": [
+        "post"
+      ]
+    },
+    {
+      "type": "documentDB",
+      "name": "$return",
+      "databaseName": "vehiclelog",
+      "collectionName": "vehicle",
+      "createIfNotExists": false,
+      "connection": "COSMOS_DB_CONNECTIONSTRING",
+      "direction": "out"
+    }
+  ]
+}
