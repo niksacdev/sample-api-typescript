@@ -24,3 +24,4 @@ appsettings.json
 local.settings.json
 /vehicle-api-output-debug
 /node_modules
+.DS_Store
