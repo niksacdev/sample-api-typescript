@@ -1,0 +1,23 @@
+{
+    "$schema": "http://json.schemastore.org/proxies",
+    "proxies": {
+        "VehicleAPI-Get": {
+            "matchCondition": {
+                "route": "api/vehicle/{id}",
+                "methods": [
+                    "GET"
+                ]
+            },
+            "backendUri": "https://your-api.azurewebsites.net/{id}"
+        },
+        "VehicleAPI-POST": {
+            "matchCondition": {
+                "route": "/api/vehicle",
+                "methods": [
+                    "POST"
+                ]
+            },
+            "backendUri": "https://your-api.azurewebsites.net/vehicle-api-post"
+        }
+    }
+}
